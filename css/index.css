@@ -242,3 +242,20 @@ h1 a {
   color: #ffffff;
   text-decoration: none;
 }
+.resources {
+  display: flex;
+  flex-wrap: wrap;
+}
+.resources li {
+  width: 33.33%;
+}
+@media (max-width: 800px) {
+  .resources li {
+    width: 49.5%;
+  }
+}
+@media (max-width: 650px) {
+  .resources li {
+    width: 100%;
+  }
+}

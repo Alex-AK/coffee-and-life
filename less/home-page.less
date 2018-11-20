@@ -34,3 +34,21 @@ h1 {
     text-decoration: none;
   }
 }
+
+// ====================== Cards
+
+.resources {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    width: 33.33%;
+
+    @media @tablet {
+      width: 49.5%;
+    }
+    @media @mobile {
+      width: 100%;
+    }
+  }
+}
