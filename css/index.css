@@ -197,13 +197,16 @@ nav label {
   padding-right: 30px;
   border-right: 1px solid #ffffff;
 }
+nav a:hover {
+  color: #e1d3d5;
+}
 nav input {
   background: transparent;
   outline: none;
   border: none;
   color: #ffffff;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   padding: 20px 0;
   width: 40%;
