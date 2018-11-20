@@ -8,18 +8,29 @@ html {
 
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans TC', Helvetica, sans-serif;
   color: @font-color;
 }
 
 // prettier-ignore
 h1, h2, h3, h4, h5 {
-  font-family: 'Roboto', sans-serif;
   padding-bottom: 10px;
 }
 
 h1 {
   font-size: 4rem;
+  color: @white;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 10rem 6rem;
+  line-height: 0.8;
+  letter-spacing: 5px;
+
+  span {
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 1px;
+  }
 }
 
 h2 {
@@ -39,7 +50,6 @@ p {
   font-size: 1.6rem;
   padding-bottom: 15px;
 }
-
 img {
   max-width: 100%;
   height: auto;
