@@ -1,3 +1,38 @@
 .header-content {
   background: @main;
+  display: flex;
+  padding: 20rem 10rem;
+
+  .left-logo {
+    font-size: 2rem;
+    letter-spacing: 0.55px;
+    transform: rotate(90deg);
+    padding: 25px 0 0 8px;
+  }
+
+  @media @mobile {
+    padding: 20rem 2rem;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  color: @white;
+  font-weight: 300;
+  text-transform: uppercase;
+  // padding: 10rem 6rem;
+  line-height: 1;
+  letter-spacing: 10px;
+
+  span {
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  a {
+    color: @white;
+    text-decoration: none;
+  }
 }

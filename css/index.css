@@ -146,17 +146,6 @@ h5 {
 }
 h1 {
   font-size: 4rem;
-  color: #ffffff;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding: 10rem 6rem;
-  line-height: 0.8;
-  letter-spacing: 5px;
-}
-h1 span {
-  font-weight: 700;
-  font-size: 5rem;
-  letter-spacing: 1px;
 }
 h2 {
   font-size: 3.2rem;
@@ -188,4 +177,35 @@ img {
 }
 .header-content {
   background: #31323d;
+  display: flex;
+  padding: 20rem 10rem;
+}
+.header-content .left-logo {
+  font-size: 2rem;
+  letter-spacing: 0.55px;
+  transform: rotate(90deg);
+  padding: 25px 0 0 8px;
+}
+@media (max-width: 500px) {
+  .header-content {
+    padding: 20rem 2rem;
+  }
+}
+h1 {
+  font-size: 4rem;
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 10px;
+}
+h1 span {
+  font-weight: 700;
+  font-size: 5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+h1 a {
+  color: #ffffff;
+  text-decoration: none;
 }
