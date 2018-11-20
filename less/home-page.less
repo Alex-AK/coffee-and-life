@@ -38,17 +38,58 @@ h1 {
 // ====================== Cards
 
 .resources {
-  display: flex;
+  #mixin.layout;
   flex-wrap: wrap;
 
   li {
+    #mixin.layout;
     width: 33.33%;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+    opacity: 0.9;
+
+    @media (min-width: 1400px) {
+      width: 25%;
+    }
 
     @media @tablet {
-      width: 49.5%;
+      width: 50%;
     }
     @media @mobile {
       width: 100%;
+    }
+  }
+
+  .resource_info {
+    background: @hover;
+    padding: 21% 40%;
+    position: absolute;
+    text-align: center;
+    top: auto;
+    opacity: 0;
+
+    &hover {
+      opacity: 1;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      width: 200px;
+      color: @darkgrey;
+      line-height: 1;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      font-size: 1rem;
+      font-weight: 700;
+      border: 2px solid @darkgrey;
+      padding: 10px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: @darkgrey;
     }
   }
 }

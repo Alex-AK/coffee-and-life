@@ -180,7 +180,7 @@ nav {
 }
 @media (max-width: 650px) {
   nav {
-    padding: 20px 0 0 0;
+    padding: 25px 0 0 0;
   }
 }
 nav a,
@@ -192,6 +192,12 @@ nav label {
   color: #ffffff;
   margin-right: 4%;
   letter-spacing: 1px;
+}
+@media (max-width: 650px) {
+  nav a,
+  nav label {
+    font-size: 1.5rem;
+  }
 }
 nav label {
   padding-right: 30px;
@@ -206,7 +212,7 @@ nav input {
   border: none;
   color: #ffffff;
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 400;
   padding: 20px 0;
   width: 40%;
@@ -247,18 +253,60 @@ h1 a {
 }
 .resources {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 .resources li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 33.33%;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+  opacity: 0.9;
+}
+@media (min-width: 1400px) {
+  .resources li {
+    width: 25%;
+  }
 }
 @media (max-width: 800px) {
   .resources li {
-    width: 49.5%;
+    width: 50%;
   }
 }
 @media (max-width: 650px) {
   .resources li {
     width: 100%;
   }
+}
+.resources .resource_info {
+  background: #e1d3d5;
+  padding: 21% 40%;
+  position: absolute;
+  text-align: center;
+  top: auto;
+  opacity: 0;
+}
+.resources .resource_infohover {
+  opacity: 1;
+}
+.resources .resource_info h2 {
+  font-size: 2.4rem;
+  width: 200px;
+  color: #333333;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.resources .resource_info .button {
+  font-size: 1rem;
+  font-weight: 700;
+  border: 2px solid #333333;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333333;
 }
