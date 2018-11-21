@@ -1,4 +1,4 @@
-# Resource Front-End Commerce Page
+# Resource Front-End Page
 
 Visit Site: https://coffeeandlife.netlify.com/
 
