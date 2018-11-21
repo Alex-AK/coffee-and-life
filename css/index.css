@@ -289,24 +289,38 @@ h1 a {
   text-align: center;
   top: auto;
   opacity: 0;
-}
-.resources .resource_infohover {
-  opacity: 1;
+  transform: translateY(100%);
 }
 .resources .resource_info h2 {
   font-size: 2.4rem;
   width: 200px;
   color: #333333;
   line-height: 1;
+  letter-spacing: 5px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 .resources .resource_info .button {
   font-size: 1rem;
   font-weight: 700;
-  border: 2px solid #333333;
+  border: 2px solid #31323d;
   padding: 10px 20px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #333333;
+  color: #31323d;
+}
+.resources .resource_info .button:hover {
+  color: black;
+  border: 2px solid black;
+  transition: all 0.5s;
+}
+.resources li:hover .resource_info {
+  transform: translateY(0px);
+  opacity: 0.9;
+  transition: 0.5s;
+}
+.resources li:hover img {
+  transform: scale(1.1);
+  opacity: 0.9;
+  transition: 0.5s;
 }
